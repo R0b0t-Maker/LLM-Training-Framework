@@ -1,3 +1,6 @@
+#add comments for the code
+#Add the API for the code
+
 import tkinter as tk
 from tkinter import ttk
 from tkinter import scrolledtext
