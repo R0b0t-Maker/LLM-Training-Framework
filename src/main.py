@@ -1,3 +1,4 @@
+#Need more details
 import tkinter as tk
 from tkinter import scrolledtext
 import speech_recognition as sr
