@@ -6,6 +6,7 @@ from openai import AsyncOpenAI
 import asyncio
 import threading
 
+#need API to run the code
 OPENAI_API_KEY = '---------------------'
 
 class VoiceChatbotGUI:
