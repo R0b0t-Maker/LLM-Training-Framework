@@ -123,7 +123,7 @@ class VoiceChatbotGUI:
         self.text_area.insert(tk.END, f"Chatbot: {reply}\n")
         self.speak(reply)
         self.animate_wave()
-
+    # Function to speak the text
     def speak(self, text):
         self.engine.setProperty('rate', self.speed_slider.get())
 
