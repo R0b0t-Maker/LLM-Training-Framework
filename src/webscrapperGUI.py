@@ -13,7 +13,7 @@ def validate_input(subject, num_images):
         raise ValueError("Subject cannot be empty.")
     if not isinstance(num_images, int) or num_images <= 0:
         raise ValueError("Number of images must be a positive integer.")
-#
+#   if num_images > 100:
 def create_directory(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)
