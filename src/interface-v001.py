@@ -40,7 +40,6 @@ options = [
 
 responses = [{} for _ in range(len(questions))]
 
-# Initialize the main window
 root = tk.Tk()
 root.title("Personal Companion Questionnaire")
 root.geometry("800x600")
