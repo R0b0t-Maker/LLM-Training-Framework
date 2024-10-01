@@ -109,7 +109,7 @@ class VoiceChatbotGUI:
         
         if self.listening:
             self.root.after(1000, self.listen)
-
+    # Function to run async respond
     def run_async_respond(self, user_input):
         asyncio.run(self.respond(user_input))
 
