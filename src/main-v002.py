@@ -89,7 +89,7 @@ class VoiceChatbotGUI:
     #function to run async respond
     def run_async_respond(self, user_input):
         asyncio.run(self.respond(user_input))
-
+    #function to respond to user input
     async def respond(self, user_input):
         response = await self.client.chat.completions.create(
             model="gpt-3.5-turbo",
