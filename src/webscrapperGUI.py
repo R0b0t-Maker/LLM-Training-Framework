@@ -7,7 +7,6 @@ from PIL import Image
 from io import BytesIO
 import zipfile
 import shutil
-# import streamlit.components.v1 as components
 def validate_input(subject, num_images):
     if not subject:
         raise ValueError("Subject cannot be empty.")
