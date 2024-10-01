@@ -64,7 +64,7 @@ class VoiceChatbotGUI:
     def run_async_respond(self, user_input):
         asyncio.set_event_loop(self.loop)
         self.loop.run_until_complete(self.respond(user_input))
-
+    # Function to respond to user input
     async def respond(self, user_input):
         response = await self.client.chat.completions.create(
             model="gpt-3.5-turbo",
