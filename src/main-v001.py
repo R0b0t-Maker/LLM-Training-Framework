@@ -35,11 +35,11 @@ class VoiceChatbotGUI:
         self.listening = True
         self.text_area.insert(tk.END, "Voice interaction started...\n")
         threading.Thread(target=self.listen).start()
-    # Function to stop voice interaction
+    
     def stop_voice_interaction(self):
         self.listening = False
         self.text_area.insert(tk.END, "Voice interaction stopped.\n")
-    # Function to listen to user input
+
     def listen(self):
         if not self.listening:
             return
@@ -60,7 +60,7 @@ class VoiceChatbotGUI:
         
         if self.listening:
             self.root.after(1000, self.listen)
-    
+
     def run_async_respond(self, user_input):
         asyncio.set_event_loop(self.loop)
         self.loop.run_until_complete(self.respond(user_input))
