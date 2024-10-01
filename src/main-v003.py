@@ -135,7 +135,7 @@ class VoiceChatbotGUI:
 
         self.engine.say(text)
         self.engine.runAndWait()
-
+    # Function to animate the wave
     def animate_wave(self):
         self.wave_canvas.delete("wave")
         width = self.wave_canvas.winfo_width()
