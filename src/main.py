@@ -39,7 +39,7 @@ class VoiceChatbotGUI:
     def stop_voice_interaction(self):
         self.listening = False
         self.text_area.insert(tk.END, "Voice interaction stopped.\n")
-
+    # Function to listen to user input
     def listen(self):
         if not self.listening:
             return
