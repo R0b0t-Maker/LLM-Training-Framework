@@ -60,7 +60,6 @@ class VoiceChatbotGUI:
     def stop_voice_interaction(self):
         self.listening = False
         self.text_area.insert(tk.END, "Voice interaction stopped.\n")
-    #function to stop voice output
     def stop_voice_output(self):
         self.engine.stop()
         self.speaking = False
