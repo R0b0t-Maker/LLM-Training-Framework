@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Define the questions and options
 questions = [
     "What are some activities you enjoy doing in your free time?",
     "Do you enjoy reading? If yes, what kinds of books or stories do you like?",
