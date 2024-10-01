@@ -72,14 +72,12 @@ def record_response():
     current_question += 1
     next_question()
 
-# Function to skip the current question
 def skip_question():
     global current_question
     responses[current_question] = {questions[current_question]: []}
     current_question += 1
     next_question()
 
-# Function to go back to the previous question
 def prev_question():
     global current_question
     if current_question > 0:
