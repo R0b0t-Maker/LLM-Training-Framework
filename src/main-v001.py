@@ -74,7 +74,7 @@ class VoiceChatbotGUI:
         reply = response.choices[0].message.content
         self.text_area.insert(tk.END, f"Chatbot: {reply}\n")
         self.speak(reply)
-
+    # Function to speak the text
     def speak(self, text):
         self.engine.say(text)
         self.engine.runAndWait()
