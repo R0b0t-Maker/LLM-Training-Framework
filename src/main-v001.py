@@ -30,7 +30,7 @@ class VoiceChatbotGUI:
         self.listening = False
         self.loop = asyncio.new_event_loop()
         self.client = AsyncOpenAI(api_key=OPENAI_API_KEY)
-
+    # Function to start voice interaction
     def start_voice_interaction(self):
         self.listening = True
         self.text_area.insert(tk.END, "Voice interaction started...\n")
