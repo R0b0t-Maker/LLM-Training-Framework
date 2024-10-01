@@ -70,7 +70,7 @@ class VoiceChatbotGUI:
     def read_last_response(self):
         if self.last_response:
             self.speak(self.last_response)
-    #function to listen to user input
+    
     def listen(self):
         while self.listening:
             with self.microphone as source:
@@ -86,10 +86,10 @@ class VoiceChatbotGUI:
                 self.text_area.insert(tk.END, "Sorry, I did not understand that.\n")
             except sr.RequestError:
                 self.text_area.insert(tk.END, "Request error.\n")
-    #function to run async respond
+    
     def run_async_respond(self, user_input):
         asyncio.run(self.respond(user_input))
-    
+
     async def respond(self, user_input):
         response = await self.client.chat.completions.create(
             model="gpt-3.5-turbo",
