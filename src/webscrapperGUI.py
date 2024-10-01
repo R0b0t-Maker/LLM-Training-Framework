@@ -7,17 +7,17 @@ from PIL import Image
 from io import BytesIO
 import zipfile
 import shutil
-
+# import streamlit.components.v1 as components
 def validate_input(subject, num_images):
     if not subject:
         raise ValueError("Subject cannot be empty.")
     if not isinstance(num_images, int) or num_images <= 0:
         raise ValueError("Number of images must be a positive integer.")
-
+#   if num_images > 100:
 def create_directory(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)
-
+#   return directory
 def is_valid_image_url(url):
     return url and url.startswith('http')
 
