@@ -86,7 +86,7 @@ class VoiceChatbotGUI:
                 self.text_area.insert(tk.END, "Sorry, I did not understand that.\n")
             except sr.RequestError:
                 self.text_area.insert(tk.END, "Request error.\n")
-    
+    #function to run async respond
     def run_async_respond(self, user_input):
         asyncio.run(self.respond(user_input))
 
