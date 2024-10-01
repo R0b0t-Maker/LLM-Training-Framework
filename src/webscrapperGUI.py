@@ -101,7 +101,6 @@ if st.button('Download Images'):
         if subject_dir:
             st.write("Downloaded images:")
             
-            # Display exactly three sample images
             image_files = [f for f in os.listdir(subject_dir) if f.endswith(('jpg', 'jpeg', 'png', 'gif'))]
             num_display_images = min(3, len(image_files))
             for i in range(num_display_images):
