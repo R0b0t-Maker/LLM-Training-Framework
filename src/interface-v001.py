@@ -123,7 +123,6 @@ prev_button.pack(side="left", padx=20)
 skip_button.pack(side="right", padx=20)
 next_button.pack(side="right", padx=20)
 
-# Display the welcome screen initially
 show_welcome_screen()
 
 # Start the main event loop
