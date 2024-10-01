@@ -8,7 +8,7 @@ import threading
 
 # Replace 'your_openai_api_key' with your actual OpenAI API key
 OPENAI_API_KEY = '-------------------'
-# Class for the GUI
+
 class VoiceChatbotGUI:
     def __init__(self, root):
         self.root = root
@@ -30,7 +30,7 @@ class VoiceChatbotGUI:
         self.listening = False
         self.loop = asyncio.new_event_loop()
         self.client = AsyncOpenAI(api_key=OPENAI_API_KEY)
-    
+
     def start_voice_interaction(self):
         self.listening = True
         self.text_area.insert(tk.END, "Voice interaction started...\n")
