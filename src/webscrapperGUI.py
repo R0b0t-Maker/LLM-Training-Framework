@@ -17,7 +17,6 @@ def validate_input(subject, num_images):
 def create_directory(directory):
     if not os.path.exists(directory):
         os.makedirs(directory)
-#   return directory
 def is_valid_image_url(url):
     return url and url.startswith('http')
 
