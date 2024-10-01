@@ -79,12 +79,12 @@ class VoiceChatbotGUI:
 
         self.listening = False
         self.client = AsyncOpenAI(api_key=OPENAI_API_KEY)
-
+    # Function to start voice interaction    
     def start_voice_interaction(self):
         self.listening = True
         self.text_area.insert(tk.END, "Voice interaction started...\n")
         threading.Thread(target=self.listen).start()
-
+    
     def stop_voice_interaction(self):
         self.listening = False
         self.text_area.insert(tk.END, "Voice interaction stopped.\n")
