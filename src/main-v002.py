@@ -42,7 +42,7 @@ class VoiceChatbotGUI:
         self.last_response = ""
         self.loop = asyncio.new_event_loop()
         self.client = AsyncOpenAI(api_key=OPENAI_API_KEY)
-
+    #function to setup the voice
     def setup_voice(self):
         voices = self.engine.getProperty('voices')
         for voice in voices:
