@@ -119,7 +119,6 @@ if st.session_state.json_path:
         )
 
 if st.session_state.subject_dir:
-    # Zip the images folder
     zip_path = os.path.join('images', f'{subject}_images')
     zip_directory(st.session_state.subject_dir, zip_path)
     
