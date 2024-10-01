@@ -51,7 +51,6 @@ class VoiceChatbotGUI:
                 break
         self.engine.setProperty('rate', 150)
         self.engine.setProperty('volume', 1)
-    #function to start voice interaction
     def start_voice_interaction(self):
         self.listening = True
         self.text_area.insert(tk.END, "Voice interaction started...\n")
