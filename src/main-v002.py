@@ -70,7 +70,7 @@ class VoiceChatbotGUI:
     def read_last_response(self):
         if self.last_response:
             self.speak(self.last_response)
-    #function to listen to user input
+    
     def listen(self):
         while self.listening:
             with self.microphone as source:
