@@ -125,5 +125,4 @@ next_button.pack(side="right", padx=20)
 
 show_welcome_screen()
 
-# Start the main event loop
 root.mainloop()
