@@ -99,7 +99,7 @@ class VoiceChatbotGUI:
         self.text_area.insert(tk.END, f"Chatbot: {self.last_response}\n")
         if self.voice_active:
             self.speak(self.last_response)
-    #function to speak the text
+    
     def speak(self, text):
         if not self.speaking:
             self.speaking = True
