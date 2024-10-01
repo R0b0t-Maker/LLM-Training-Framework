@@ -84,7 +84,6 @@ def prev_question():
         current_question -= 1
     next_question()
 
-# Function to show the summary of responses
 def show_summary():
     summary = "Thank you! Here are your responses:\n\n"
     for i, question in enumerate(questions):
