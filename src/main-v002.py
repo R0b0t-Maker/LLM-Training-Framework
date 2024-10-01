@@ -9,7 +9,7 @@ import threading
 
 #need API to run the code
 OPENAI_API_KEY = '---------------------'
-
+#class for the GUI
 class VoiceChatbotGUI:
     def __init__(self, root):
         self.root = root
