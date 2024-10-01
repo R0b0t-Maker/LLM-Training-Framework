@@ -8,7 +8,7 @@ import threading
 
 # Replace 'your_openai_api_key' with your actual OpenAI API key
 OPENAI_API_KEY = '-------------------'
-
+# Class for the GUI
 class VoiceChatbotGUI:
     def __init__(self, root):
         self.root = root
