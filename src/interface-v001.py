@@ -107,7 +107,6 @@ def display_questionnaire():
     button_frame.pack(side="bottom", fill="x", pady=20)
     next_question()
 
-# Create widgets for the questionnaire
 question_label = tk.Label(root, text="", font=("Helvetica", 18), wraplength=700, bg='#f0f4f7', fg='#333333')
 
 vars = [tk.StringVar() for _ in range(5)]
