@@ -90,7 +90,6 @@ def show_summary():
     messagebox.showinfo("Summary", summary)
     root.quit()
 
-# Welcome screen
 def show_welcome_screen():
     welcome_frame = tk.Frame(root, bg='#f0f4f7')
     welcome_frame.pack(fill="both", expand=True)
