@@ -101,7 +101,6 @@ def show_welcome_screen():
     start_button = tk.Button(welcome_frame, text="Start Questionnaire", command=lambda: [welcome_frame.destroy(), display_questionnaire()], font=("Helvetica", 14), bg='#4CAF50', fg='white', activebackground='#45a049')
     start_button.pack(pady=20)
 
-# Function to display the questionnaire
 def display_questionnaire():
     question_label.pack(pady=20)
     for button in buttons:
