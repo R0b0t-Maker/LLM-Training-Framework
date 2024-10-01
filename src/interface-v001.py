@@ -64,7 +64,6 @@ def next_question():
     else:
         show_summary()
 
-# Function to record the response and move to the next question
 def record_response():
     global current_question
     selected_options = [var.get() for var in vars if var.get()]
