@@ -48,7 +48,6 @@ root.configure(bg='#f0f4f7')
 
 current_question = 0
 
-# Function to display the next question
 def next_question():
     global current_question
     if current_question < len(questions):
