@@ -66,7 +66,7 @@ class VoiceChatbotGUI:
         self.speaking = False
         self.voice_active = False
         self.text_area.insert(tk.END, "Voice output stopped.\n")
-
+    #function to read the last response
     def read_last_response(self):
         if self.last_response:
             self.speak(self.last_response)
