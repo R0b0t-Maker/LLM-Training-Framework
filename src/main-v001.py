@@ -35,11 +35,11 @@ class VoiceChatbotGUI:
         self.listening = True
         self.text_area.insert(tk.END, "Voice interaction started...\n")
         threading.Thread(target=self.listen).start()
-    # Function to stop voice interaction
+    
     def stop_voice_interaction(self):
         self.listening = False
         self.text_area.insert(tk.END, "Voice interaction stopped.\n")
-    
+
     def listen(self):
         if not self.listening:
             return
