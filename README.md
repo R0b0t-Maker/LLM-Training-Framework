@@ -16,7 +16,7 @@ This repository contains tools, resources, and codebases to explore and train di
 - **Resource Papers**: A collection of foundational and advanced papers on LLMs and NLP, useful for understanding key concepts and staying updated on state-of-the-art research.
 - **Practical Code**: A `src` folder with various practical codes for hands-on practice on LLM-related tasks.
 
-## Repository Structure
+## Repository Structure (ToDo)
 ```
 ├── data/
 │   ├── preprocessing/      # Scripts to clean and prepare datasets
@@ -41,7 +41,7 @@ This repository contains tools, resources, and codebases to explore and train di
 └── README.md               # This file
 ```
 
-## Getting Started
+## Getting Started (ToDo)
 
 ### Prerequisites
 - Python 3.8+
