@@ -132,8 +132,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 For questions or collaboration, please reach out via email or open an issue on GitHub.
 
----
-
-Happy training, experimenting, and learning!
-```
 
